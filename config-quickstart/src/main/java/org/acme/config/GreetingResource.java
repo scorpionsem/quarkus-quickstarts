@@ -32,10 +32,9 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public static String getRandomNumber() {
-        int min = 29 + new Random();
-        int max = 100 new Random();
+       
         Random random = new Random();
-        return "Random = " + random.nextInt(max - min + 1) + min;
+        return "Random = " + random.nextInt(100);
     }
 
 }
