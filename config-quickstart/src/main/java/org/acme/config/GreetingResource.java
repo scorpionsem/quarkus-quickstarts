@@ -26,4 +26,16 @@ public class GreetingResource {
     public String hello() {
         return message + " " + name.orElse("world") + suffix;
     }
+
+    import java.util.Random;
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public static String getRandomNumber() {
+        int min = 29 + new Random();
+        int max = 100 new Random();
+        Random random = new Random();
+        return "Random = " + random.nextInt(max - min + 1) + min;
+    }
+
 }
