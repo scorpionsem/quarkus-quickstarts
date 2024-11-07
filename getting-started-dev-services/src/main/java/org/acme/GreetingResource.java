@@ -32,4 +32,14 @@ public class GreetingResource {
                 .collect(Collectors.joining (", "));
         return "I've seen " + names;
     }
+
+    public String coremedia(String x){
+
+        x = "the first in the house" + x;
+        
+    }
+
+    public String coremedia(String y){
+        return 1;
+    }
 }
